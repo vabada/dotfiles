@@ -1,0 +1,14 @@
+# https://github.com/manno/i3-config/blob/master/bin/keymap
+# Keyboard configuration
+setxkbmap -option
+
+# Set alt-right as compose key
+# https://en.wikipedia.org/wiki/Compose_key#Common_compose_combinations
+setxkbmap -option compose:ralt
+
+# http://tiborsimko.org/capslock-escape-control.html
+# Set caps-lock to work as control if pressed and kept pressed
+setxkbmap -option ctrl:nocaps
+
+# Set caps-lock to work as Escape if pressed and released inmediately (< 300 ms)
+xcape -e 'Control_L=Escape' -t 300

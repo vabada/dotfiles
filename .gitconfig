@@ -1,0 +1,27 @@
+[user]
+    name = Daniel Abad
+    email = d.abad@cern.ch
+[core]
+    editor = vim
+    autocrlf = input
+    safecrlf = true
+    ; excludesfile = /home/abad/.gitignore
+[alias]
+    please = push --force-with-lease
+    cp = cherry-pick
+    st = status
+    cl = clone
+    ci = commit
+    co = checkout
+    br = branch
+    diff = diff --word-diff
+    dc = diff --cached
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+[push]
+    default = matching
+[color]
+    ui = true
+[gitreview]
+    username = vabada
